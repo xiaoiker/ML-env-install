@@ -24,8 +24,12 @@ cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=$HOME/local -D BUILD_opencv_gpu=OFF -DCUDA_HOST_COMPILER=/usr/bin/g++ -D CUDA_GENERATION=Kepler ..
 make -j32
 make install
-cd ..
-cd ..
+# add this PATH to the envoriment
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# but this is not work well for me,it should be
+# export PYTHONPATH= $HOME/local/lib/python2.7/site-packages:$PYTHONPATH
+# here HOME means the login path which you can get by cmd:pwd at a new terminal
+
 
 # if you want to install opencv3 by a user ID you can just using pip
 pip install opencv-python== #find out which versions can be installed by this way,
