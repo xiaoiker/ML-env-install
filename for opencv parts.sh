@@ -30,3 +30,4 @@ cd ..
 # if you want to install opencv3 by a user ID you can just using pip
 pip install opencv-python== #find out which versions can be installed by this way,
 pip install opencv-python==3.4.0 # for version 3.4.0
+# pip install opencv-python==3.4.0 --user # for someone donot have the root
