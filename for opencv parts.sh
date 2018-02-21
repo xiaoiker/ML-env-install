@@ -35,3 +35,12 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 pip install opencv-python== #find out which versions can be installed by this way,
 pip install opencv-python==3.4.0 # for version 3.4.0
 # pip install opencv-python==3.4.0 --user # for someone donot have the root
+
+########
+#Note:
+
+#if the cv2.videoCapture(videoname) throw out a error, then check if the ffmpge work well here.Using the following command:
+   python -c "import cv2; print(cv2.getBuildInformation())" | grep -i ffmpeg
+# if the answer is: FFMPEG: YES then that will be fine 
+
+
