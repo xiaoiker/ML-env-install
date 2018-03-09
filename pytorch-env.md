@@ -23,8 +23,11 @@ export PATH="$HOME/anaconda3/bin:$PATH"
  nvidia-smi #check the using situation of the GPUs
 ```
 
+Testing your pytorch supports GPU or not?
 
 ```
+import torch
+torch.cuda.is_available()
 ```
 
 ```
