@@ -29,8 +29,9 @@ Testing your pytorch supports GPU or not?
 import torch
 torch.cuda.is_available()
 ```
-
+Training with muti-GPUs:
 ```
+CUDA_VISIBLE_DEVICES=0,1 python code.py
 ```
 
 
