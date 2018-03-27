@@ -29,11 +29,13 @@ Testing your pytorch supports GPU or not?
 import torch
 torch.cuda.is_available()
 ```
+The easist way to test wheather CUDA installed successed.
+```
+python -c 'import torch; print(torch.rand(2,3).cuda())'
+```
+
 Training with muti-GPUs:
 ```
 CUDA_VISIBLE_DEVICES=0,1 python code.py
 ```
 
-
-```
-```
