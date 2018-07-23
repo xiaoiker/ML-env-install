@@ -39,3 +39,12 @@ Training with muti-GPUs:
 CUDA_VISIBLE_DEVICES=0,1 python code.py
 ```
 
+
+IN CONDA: https://conda.io/docs/user-guide/tasks/manage-environments.html#removing-an-environment
+
+Check your current envoriments
+```
+conda info --envs
+```
+
+
